@@ -1,5 +1,5 @@
 import React from "react";
-import myResume from "../../assets/files/";
+import myResume from "../assets/files/Resume.docx";
 import { BsCloudDownload } from "react-icons/bs";
 import { MdFoundation } from "react-icons/md";
 import { GrTechnology } from "react-icons/gr";

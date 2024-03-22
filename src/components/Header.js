@@ -1,9 +1,7 @@
 import React from "react";
-import Nav from "../Nav";
+import Nav from "./Nav";
 
-function Header(props) {
-  const { currentTab, handleTabChange } = props;
-
+function Header() {
   return (
     <div>
       <section>
@@ -13,8 +11,7 @@ function Header(props) {
           </div>
           <div>
             <Nav
-              currentTab={currentTab}
-              handleTabChange={handleTabChange}
+              
             ></Nav>
           </div>
         </header>

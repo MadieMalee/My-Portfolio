@@ -1,7 +1,7 @@
 import React from "react";
-import reelRecsImage from "../../assets/portfolio/ReelRecs.png";
-import weatherDashImage from "../../assets/portfolio/WeatherApp.png";
-import noteTakerImage from "../../assets/portfolio/NoteTaker.png";
+import reelRecsImage from "../assets/images/ReelRecs.png";
+import weatherDashImage from "../assets/images/WeatherApp.png";
+import noteTakerImage from "../assets/images/NoteTaker.png";
 
 function Portfolio() {
   return (

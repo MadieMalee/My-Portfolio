@@ -1,6 +1,6 @@
 import React from "react";
-import { Github } from "react-icons/vsc";
-import { Linkedin } from "react-icons/ai";
+import { VscGithub } from "react-icons/vsc";
+import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -9,13 +9,13 @@ function Footer() {
       <ul className="social-links">
         <li className="logo">
           <a href="https://github.com/MadieMalee" aria-label="GitHub">
-            <Github />
+            <VscGithub />
             <span>GitHub</span>
           </a>
         </li>
         <li className="logo">
           <a href="https://www.linkedin.com/in/madison-vercher-68b8862a7/" aria-label="LinkedIn">
-            <Linkedin />
+            <FaLinkedin />
             <span>LinkedIn</span>
           </a>
         </li>
