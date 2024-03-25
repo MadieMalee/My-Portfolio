@@ -14,7 +14,7 @@ function Portfolio() {
         <div className="job">
           <div className="job-info">
             <div className="job-img">
-              <button onClick={(e) => e.preventDefault()}>
+              <a href="">
                 {" "}
                 <img
                   src={noteTakerImage}
@@ -22,13 +22,13 @@ function Portfolio() {
                   style={{ width: "100%" }}
                   alt="NoteTaker"
                 />
-              </button>
+              </a>
             </div>
             <div className="job-text">
               <h4>Note Taker</h4>
               <p>
                 An application that allows users to be able to write and save notes so that they can organize their thoughts and keep track of tasks they need to complete. They can add new
-                notes, delete notes, and save notes.{" "}
+                notes, delete notes and save natoes.{" "}
               </p>
             </div>
           </div>
@@ -37,7 +37,7 @@ function Portfolio() {
         <div className="job">
           <div className="job-info">
             <div className="job-img">
-              <button onClick={() => window.open("https://madiemalee.github.io/Weather-Dashboard/", "_blank")}>
+              <a href="https://madiemalee.github.io/Weather-Dashboard/  ">
                 {" "}
                 <img
                   src={weatherDashImage}
@@ -45,12 +45,12 @@ function Portfolio() {
                   style={{ width: "100%" }}
                   alt="WeatherApp"
                 />
-              </button>
+              </a>
             </div>
             <div className="job-text">
               <h4>Weather Dashboard</h4>
               <p>
-                A Website that allows users to see the current and future 5-day forecast for any city they search. The user can see the temperature, humidity levels, and
+                A Website that allows users see the the current and future 5 day forecast for any city you search. The user can see the temperature, humidity levels and
                 wind speed.{" "}
               </p>
             </div>
@@ -60,7 +60,7 @@ function Portfolio() {
         <div className="job">
           <div className="job-info">
             <div className="job-img">
-              <button onClick={() => window.open("https://victorsamuel-dev.github.io/ReelRecs/", "_blank")}>
+              <a href="https://victorsamuel-dev.github.io/ReelRecs/">
                 {" "}
                 <img
                   src={reelRecsImage}
@@ -68,12 +68,12 @@ function Portfolio() {
                   style={{ width: "100%" }}
                   alt="ReelRecs"
                 />
-              </button>
+              </a>
             </div>
             <div className="job-text">
               <h4>ReelRecs</h4>
               <p>
-                Website that displays the most popular movies for the top genres with ratings and allows you to search for any movie with a result of the movie description and a linked movie trailer.{" "}
+              Website that displays the most popular movies for the top genres with ratings and allows you to search for any movie with a result of the movie description and a linked movie trailer.{" "}
               </p>
             </div>
           </div>
