@@ -12,7 +12,7 @@ const AboutMe = () => {
       <div className="flex-row">
         <div className="intro-info">
           <div className="intro-img">
-            <img src={profileImage} style={{ width: "100%" }} alt="Avatar" />
+            <img src={profileImage} style={{ width: "440px" }} alt="Avatar" />
           </div>
           <p>
             Welcome to my Portfolio. As a junior software developer, I'm on an exciting journey of growth and learning in the world of technology. While I may be relatively new to the field, my enthusiasm and eagerness to expand my skills drive me to tackle challenges head-on and continuously improve.

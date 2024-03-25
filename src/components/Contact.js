@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../utils/helper'; // Import your email validation function
+import React, { useState } from "react";
+import { validateEmail } from "../utils/helper"; // Import your email validation function
 
 function Contact() {
-  const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  const [message, setMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [userName, setUserName] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    if (name === 'email') {
+    if (name === "email") {
       setEmail(value);
-    } else if (name === 'userName') {
+    } else if (name === "userName") {
       setUserName(value);
     } else {
       setMessage(value);
@@ -21,16 +21,16 @@ function Contact() {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or Name is invalid');
+      setErrorMessage("Email or Name is invalid");
       return;
     }
     if (!message) {
-      setErrorMessage('Message is required.');
+      setErrorMessage("Message is required.");
       return;
     }
-    setUserName('');
-    setMessage('');
-    setEmail('');
+    setUserName("");
+    setMessage("");
+    setEmail("");
   };
 
   return (
@@ -54,34 +54,25 @@ function Contact() {
         </div>
         <div className="contact-form">
           <h3>Contact Me</h3>
-          <form className="form" onSubmit={handleFormSubmit}>
-            <label htmlFor="contact-name">Name</label>
-            <input
-              value={userName}
-              name="userName"
-              onChange={handleInputChange}
-              type="text"
-              id="contact-name"
-              placeholder="Your Name"
-            />
-            <label htmlFor="contact-email">Email</label>
-            <input
-              value={email}
-              name="email"
-              onChange={handleInputChange}
-              type="email"
-              id="contact-email"
-              placeholder="Your Email"
-            />
-            <label htmlFor="contact-message">Message</label>
-            <textarea
-              value={message}
-              name="message"
-              onChange={handleInputChange}
-              type="message"
-              id="contact-message"
-              placeholder="Your Message"
-            />
+          <form className="form" style={{ display: "flex", alignItems: "center" }} onSubmit={handleFormSubmit}>
+            <div style={{ marginRight: "24px" }}>
+              <label htmlFor="contact-name" style={{ marginRight: "3px" }}>
+                Name
+              </label>
+              <input value={userName} name="userName" onChange={handleInputChange} type="text" id="contact-name" placeholder="Your Name" />
+            </div>
+            <div style={{ marginRight: "24px" }}>
+              <label htmlFor="contact-email" style={{ marginRight: "3px" }}>
+                Email
+              </label>
+              <input value={email} name="email" onChange={handleInputChange} type="email" id="contact-email" placeholder="Your Email" />
+            </div>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <label htmlFor="contact-message" style={{ marginRight: "3px" }}>
+                Message
+              </label>
+              <textarea value={message} name="message" onChange={handleInputChange} type="message" id="contact-message" placeholder="Your Message" />
+            </div>
             <button type="submit">Submit</button>
           </form>
         </div>
